@@ -1,0 +1,14 @@
+{
+  "name": "taxirachsoi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "wrangler": "^4.149.0"
+  }
+}

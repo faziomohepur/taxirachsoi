@@ -1,0 +1,99 @@
+<style>
+    :root {
+	  --green-900: #063d2b;
+	  --green-800: #0a5c3e;
+	  --green-700: #0e7a52;
+	  --green-600: #0e9f6e;
+	  --green-500: #16b881;
+	  --green-100: #e6f7ef;
+      --primary-dark: #0b0907;
+      --secondary-dark: #211a12;
+      --gold: #d6a53b;
+      --gold-light: #f5d887;
+      --gold-dark: #a97316;
+      --cream: #fcf9f2;
+      --text-muted: #665c51;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(214, 165, 59, 0.18), transparent 34%),
+        var(--cream);
+      color: #1f1b15;
+      margin: 0;
+      padding: 24px 0;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: #ffffff;
+      padding: clamp(30px, 6vw, 48px) clamp(20px, 5vw, 38px);
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: calc(100% - 32px);
+      border: 1px solid rgba(214, 165, 59, 0.3);
+    }
+    .icon {
+      font-size: clamp(2.9rem, 9vw, 4rem);
+      color: #22c55e;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(1.55rem, 5vw, 2rem);
+      line-height: 1.28;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: clamp(0.92rem, 2.5vw, 1rem);
+      line-height: 1.72;
+      margin-bottom: 24px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: clamp(0.84rem, 2.4vw, 0.94rem);
+      line-height: 1.35;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    a.btn:hover { transform: translateY(-2px); }
+    .btn-call {
+      background: linear-gradient(135deg, #2a2117, var(--green-600));
+      color: var(--green-600);
+      border: 1px solid rgba(214, 165, 59, 0.72);
+      box-shadow: 0 7px 18px rgba(11, 9, 7, 0.2);
+    }
+    .btn-zalo {
+      background: linear-gradient(135deg, var(--gold-light), #c58b25);
+      color: var(--primary-dark);
+      border: 1px solid rgba(169, 115, 22, 0.76);
+      box-shadow: 0 7px 18px rgba(169, 115, 22, 0.2);
+    }
+    .btn-home {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border: 1px solid var(--gold);
+    }
+    @media (max-width: 520px) {
+      .btn-group { display: grid; }
+      a.btn { width: 100%; }
+      p br { display: none; }
+    }
+  </style>
